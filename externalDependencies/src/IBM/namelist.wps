@@ -1,0 +1,52 @@
+&share
+ wrf_core 		= 'ARW',
+ max_dom 		= DT_MAX_DOM_DT,
+ start_date 	= 'DT_START_DATE_TIME_DT', 'DT_START_DATE_TIME_DT', 'DT_START_DATE_TIME_DT', 'DT_START_DATE_TIME_DT',
+ end_date   	= 'DT_END_DATE_TIME_DT', 'DT_END_DATE_TIME_DT', 'DT_END_DATE_TIME_DT', 'DT_END_DATE_TIME_DT',
+ interval_seconds 	= DT_INTERVAL_SECONDS,
+ io_form_geogrid 	= 2,
+ debug_level 	= 0,
+/
+
+&geogrid
+ parent_id		= 1, 1, 2, 3,
+ parent_grid_ratio 	= 1, DT_PARENT_GRID_RATIO_DT, DT_PARENT_GRID_RATIO_DT, DT_PARENT_GRID_RATIO_DT,
+ i_parent_start         = 1,	DT_I_PARENT_START_2_DT,	DT_I_PARENT_START_3_DT,	DT_I_PARENT_START_4_DT,
+ j_parent_start         = 1,	DT_J_PARENT_START_2_DT,	DT_J_PARENT_START_3_DT,	DT_J_PARENT_START_4_DT,
+ e_we                   = DT_WE_COUNT_1_DT,	DT_WE_COUNT_2_DT,	DT_WE_COUNT_3_DT,	DT_WE_COUNT_4_DT,
+ e_sn          	= DT_SN_COUNT_1_DT,	DT_SN_COUNT_2_DT,	DT_SN_COUNT_3_DT,	DT_SN_COUNT_4_DT,
+ geog_data_res  = 'default', 'default', 'default', 'default',
+ dx 		= DT_DX_1_DT,
+ dy 		= DT_DY_1_DT,
+ map_proj 		= 'DT_WPS_MAP_PROJ_DT',
+ ref_lat   		= DT_LATITUDE_DT,
+ ref_lon   		= DT_LONGITUDE_DT,
+ truelat1  		= DT_LATITUDE_DT,
+ truelat2  		= DT_LATITUDE_DT,
+ stand_lon 		= DT_LONGITUDE_DT,
+ geog_data_path 	= 'DT_GEOG_DATA_PATH_DT'
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix     = 'DT_UNGRIB_PREFIX_DT',
+/
+
+&metgrid
+ fg_name = 'FILE',
+ io_form_metgrid = 2,
+/
+
+&mod_levs
+ press_pa = 201300 , 200100 , 100000 ,
+             95000 ,  90000 ,
+             85000 ,  80000 ,
+             75000 ,  70000 ,
+             65000 ,  60000 ,
+             55000 ,  50000 ,
+             45000 ,  40000 ,
+             35000 ,  30000 ,
+             25000 ,  20000 ,
+             15000 ,  10000 ,
+              5000 ,   1000
+ /
